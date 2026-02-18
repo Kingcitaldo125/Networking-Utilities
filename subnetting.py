@@ -1,6 +1,10 @@
 from sys import argv
 
 def subnet(networks):
+	"""
+	Create ranges of IPV4 addresses based on a number of networks.
+	Appends those network ranges as a list of tuples, then returns that list of tuples.
+	"""
 	if networks == 0:
 		return []
 
@@ -18,3 +22,4 @@ def subnet(networks):
 
 if len(argv) > 1:
 	print(subnet(int(argv[1])))
+
